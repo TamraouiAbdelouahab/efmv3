@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titre');
             $table->string('auteur');
-            $table->number('nb_pages');
+            $table->integer('nb_pages');
             $table->string('categorie');
             $table->timestamps();
         });
