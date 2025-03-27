@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     @vite('resources/css/app.css')
+    <title>Ajouter Livre</title>
   </head>
   <body>
     <form class="border-b border-gray-900/10 pb-12 w-1/2 m-auto mt-10" action="{{ route('livre.store') }}" method='POST'>

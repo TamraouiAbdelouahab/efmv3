@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LivreController;
 use Illuminate\Support\Facades\Route;
 
@@ -12,3 +13,4 @@ Route::get('/test', function () {
 Route::get('/book/create', [LivreController::class,'create'])->name('livre.create');
 Route::post('/book', [LivreController::class,'store'])->name('livre.store');
 Route::get('/book', [LivreController::class,'index'])->name('livre.index');
+Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
